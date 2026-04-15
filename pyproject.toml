@@ -11,3 +11,9 @@ dependencies = ["dnspython>=2.0"]
 
 [project.scripts]
 fpdns = "fpdns.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fpdns*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
