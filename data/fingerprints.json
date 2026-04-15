@@ -1,0 +1,52 @@
+{
+    "fingerprints": [
+        {
+            "id": "iq0",
+            "pattern": "1,QUERY,0,0,1,1,0,0,NOERROR,1,0,0,0",
+            "result": {
+                "vendor": "NLnetLabs",
+                "product": "NSD",
+                "version": "3.1.0 -- 3.2.8"
+            }
+        },
+        {
+            "id": "iq1",
+            "pattern": "1,QUERY,0,0,0,0,0,0,NXDOMAIN,1,0,0,0",
+            "result": {
+                "vendor": "Unlogic",
+                "product": "Eagle DNS",
+                "version": "1.1.1"
+            }
+        },
+        {
+            "id": "iq2",
+            "pattern": "1,QUERY,0,0,0,0,0,0,NOERROR,1,0,0,0",
+            "result": {
+                "vendor": "Unlogic",
+                "product": "Eagle DNS",
+                "version": "1.0 -- 1.0.1"
+            }
+        },
+        {
+            "id": "iq29",
+            "header": "0,$NOTIFY,0,1,1,0,1,1,NOTIMP,0,0,0,0",
+            "query": ". IN A",
+            "ruleset": [
+                {
+                    "id": "iq30",
+                    "pattern": "1,$NOTIFY,0,0,1,0,0,0,FORMERR,0,0,0,0",
+                    "result": {
+                        "vendor": "NLnetLabs",
+                        "product": "NSD",
+                        "version": "4.1.10 -- 4.3.1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "iq3",
+            "pattern": "1,QUERY,0,0,0,1,0,0,NOERROR,.+,.+,.+,.+",
+            "header": 
+        }
+    ]
+}
